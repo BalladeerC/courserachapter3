@@ -50,10 +50,11 @@ There are two tidy datasets: results_by_record summarises the data by observatio
 
 The tidy data is named to aid comprehension.  The column titles (subject ID and activity aside) follow the following rules:
 - starting with 'average' to denote the final step in the transformations above;
-- followed by the tool used to take the measurement: body accelerometer, gravity accelerometer, or gyroscope;
-- if the reading was a Jerk signal, this then follows in the column name;
-- identification of whether this was a time domain signal, or whether a fast Fourier transform ('FFT') was applied;
-- the direction of measurement (X Y or Z, or whether the overall magnitude was measured instead;
+- followed by the tool used to take the measurement: body accelerometer or gravity accelerometer;
+- if body accelerometer, whether the measurement is acceleration or angular velocity then follows;
+- if the reading was a Jerk signal, this then follows;
+- identification of whether this was a pure time domain signal, or whether a fast Fourier transform ('FFT') was applied;
+- the direction of measurement (X Y or Z axes), or whether the overall magnitude was measured instead;
 - finally, whether this is the average of the observation means or standard deviations.
 
 
